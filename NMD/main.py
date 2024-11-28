@@ -9,6 +9,7 @@ from datetime import datetime
 import datetime
 from xlsxwriter import Workbook
 from datetime import timedelta
+import requests
 import streamlit.components.v1 as components
 
 #################################################### BUILD DASHBOARD ############################################
@@ -136,20 +137,24 @@ elif indicador == "Deposits prediction challenge":
 
     st.write(notebooks_str1)
 
-    html_file1 = path_ts_notebook
+    #html_file1 = path_ts_notebook
 
-    with open(html_file1, 'r', encoding='utf-8') as f:
-        html_content1 = f.read()
+    #with open(html_file1, 'r', encoding='utf-8') as f:
+    #    html_content1 = f.read()
+
+    html_content1 = requests.get(path_ts_notebook).text   
 
     st.title('Challenges using Holt-Winters and ARIMA')
 
     components.html(html_content1, height=800, scrolling=True)
 
-    html_file2 = path_ts_notebook1
+    #html_file2 = path_ts_notebook1
 
-    with open(html_file2, 'r', encoding='utf-8') as i:
-        html_content2 = i.read()
+    #with open(html_file2, 'r', encoding='utf-8') as i:
+    #    html_content2 = i.read()
 
+    html_content22 = requests.get(path_ts_notebook1).text 
+    
     st.title('Challenges using LSTM and Prophet')
 
     st.write(notebooks_str2)
