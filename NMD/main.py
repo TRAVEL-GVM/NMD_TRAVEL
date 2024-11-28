@@ -153,7 +153,7 @@ elif indicador == "Deposits prediction challenge":
     #with open(html_file2, 'r', encoding='utf-8') as i:
     #    html_content2 = i.read()
 
-    html_content22 = requests.get(path_ts_notebook1).text 
+    html_content2 = requests.get(path_ts_notebook1).text 
     
     st.title('Challenges using LSTM and Prophet')
 
