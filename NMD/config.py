@@ -7,9 +7,9 @@ sidebar_indicators = ('Raw data', 'Deposits prediction challenge', 'Correlation 
 
 dashboard_main_title = "Non-Maturity Deposits"
 
-path_nmd = 'NMD.xlsx'
-path_ts_notebook = 'TimeSeries.html'
-path_ts_notebook1 = 'Challenges_TS.html'
+path_nmd = 'https://raw.githubusercontent.com/TRAVEL-GVM/NMD_TRAVEL/refs/heads/main/NMD/NMD.xlsx'
+path_ts_notebook = 'https://raw.githubusercontent.com/TRAVEL-GVM/NMD_TRAVEL/refs/heads/main/NMD/TimeSeries.html'
+path_ts_notebook1 = 'https://raw.githubusercontent.com/TRAVEL-GVM/NMD_TRAVEL/refs/heads/main/NMD/Challenges_TS.html'
 
 travel_logo_url = "https://raw.githubusercontent.com/ricardoandreom/Webscrape/refs/heads/main/travel_logo.webp"
 
